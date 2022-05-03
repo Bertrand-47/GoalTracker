@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>
+            Title
+        </title>
+        <style>
+            html{
+                text-align:center;
+            }
+            table{
+                text-align:center;
+            }
+            td.selected {
+             background-color: rgb(37, 240, 115);
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1" width="200px" height="100px" id="table">
+            <tr>
+                <td id="1">1</td>
+                <td id="2">2</td>
+                <td id="3">3</td>
+            </tr>
+        </table>
+        <script>
+            var table = document.querySelector('#table')
+                var selectedCells = table.getElementsByClassName('selected')
+                table.addEventListener('click', function (e) {
+                    var td = e.target
+                    if (td.tagName !== 'TD') {
+                        return
+                    }
+                    if(td.classList.contains('selected'))
+                    {
+                        td.classList.remove('selected')
+                        localStorage.removeItem(td.id)
+                        exit;
+                    }
+                    td.className = td.className + " " + 'selected';
+                    localStorage.setItem(td.id, td.className)
+                    
+                })
+                window.addEventListener('load', (event) => {
+                firstclass = 
+                getting_class = localStorage.getItem(1)
+                document.getElementById("1").className = " " + getting_class;
+                
+                });
+        </script>
+    </body>
+</html>

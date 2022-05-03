@@ -1,0 +1,71 @@
+body{
+  background-position: fixed;
+  background-image:url("images/bg.jpg");
+  background-size:contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  overflow-y: hidden;
+  max-height: 100vh;
+  
+}
+
+table{
+    table-layout:fixed;
+    text-align: center;
+    font-family: 'Cambria';
+    font-size:18px;
+    
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1{
+      text-align: center;
+  }
+  td.selected {
+    background-color: rgb(37, 240, 115);
+  }
+  .disable-select {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+.deselect-td
+{
+    background-color: none;
+}
+#saveButton
+{
+    height : 35px;
+    width : 200px;
+    font-family : 'Cambria';
+    border-radius : 30%;
+    margin-left: 45%;
+    margin-top: 28%;
+    position: absolute;
+    background-color:lightskyblue;
+    font-weight: bold;
+    
+    
+}
+#myProgress {
+    position: absolute;
+    width: 100%;
+    background-color: grey;
+    bottom:0;
+  }
+  
+#myBar {
+    width: 0%;
+    background-color: #04AA6D;
+    height: 30px;
+    text-align:center;
+    color:white;
+    line-height: 30px; 
+    font-weight: bold;
+
+  }
+
