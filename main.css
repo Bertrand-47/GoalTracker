@@ -68,4 +68,8 @@ table{
     font-weight: bold;
 
   }
-
+  #start_date
+  {
+    text-align:center;
+    font-family: Cambria;
+  }
